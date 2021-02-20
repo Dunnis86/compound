@@ -46,7 +46,7 @@ const theme = {
 
 function MyApp({ Component, pageProps }) {
   return (
-  <>
+  <div>
   <GlobalStyle/>
   <ThemeProvider theme={theme}>
     <Head>
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} />
     <Footer/>
   </ThemeProvider>
-  </>
+  </div>
   )
 }
 
