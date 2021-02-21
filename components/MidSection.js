@@ -3,18 +3,26 @@ import styled, { keyframes } from 'styled-components'
 
 
 const Wrapper = styled.section`
-    padding: 200px 200px 200px;
-    border-bottom-color: rgb(0,0,0);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    padding: 0;
+`;
+
+const Container = styled.div`
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 1em;
+    justify-content: left;  
+    @media(max-width: 800px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 `;
 
 const Div = styled.div`
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    justify-content: left;  
-    p {
-        font-size: 18px;
+    z-index: 5;
+    @media(max-width: 800px){
+        border-bottom-color: rgb(0,0,0);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
 `;
 
@@ -25,34 +33,60 @@ const H1 = styled.h1`
     letter-spacing: -.03em;
     color: black;
     justify-content: left;
-    margin-bottom: 40px;       
+    margin: 0.5em 0 0.5em 0;
+    @media(max-width: 800px){
+        font-size: 32px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }       
+`;
+
+const P = styled.p`
+    font-size: 18;
+    margin: 0 1em 1em 0;
+    @media(max-width: 800px){
+        margin: 40px;} 
 `;
 
 const Img = styled.div`
     height: 400px;
-    img {
-        height: 100%;
-        padding-left: 100px;
+    @media(max-width: 1100px){
+        height: 200px;
+        padding-left: 0;
     }
-
+    @media(max-width: 800px){
+        height: 200px;
+        padding-left: 0;
+    }
+    img {
+        max-height:100%;
+        @media(max-width: 800px){
+            width: 100%;
+            padding: 0;
+            border-bottom-color: rgb(0,0,0);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+    } 
 `;
 
 const MidSection = (props) => (
     <Wrapper>
-            <Div>
-                <div>
+            <Container>
+                <Img> 
+                    <img src={'archive.jpg'}/>
+                </Img>
+                <Div>
                     <H1>Looking Forward</H1>
-                    <p>
+                    <P>
                         The increasing shortages of essential medicines and a movement towards re-prioritizing by
                         Pharmaceutical players portfolio for growth has
                         inspired us to find a new and modern solution
                         for pharma supply and distribution.
-                    </p>
-                </div>
-                <Img> 
-                    <img src={'archive.jpg'}/>
-                </Img>
-            </Div>
+                    </P>
+                </Div>
+            </Container>
     </Wrapper>
 );
 

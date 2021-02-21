@@ -9,7 +9,7 @@ const Wrapper = styled.section`
     border-bottom-width: 1px;
 `;
 
-const Overlay = styled.div`
+const Container = styled.div`
     height: 100%;
     width: 100%;
     top: 0;
@@ -18,6 +18,11 @@ const Overlay = styled.div`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding: 200px;
+    @media(max-width: 800px){
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 `;
 
 const H1 = styled.h1`
@@ -28,7 +33,11 @@ const H1 = styled.h1`
     display: block;
     letter-spacing: -.03em;
     color: white;
-    justify-content: left;       
+    justify-content: left;
+    @media(max-width: 800px){
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 40px;
 `;
 
 const rotate = keyframes`
@@ -37,6 +46,12 @@ const rotate = keyframes`
     }
     100% {
         transform: translateY(60px) rotate(0deg);
+    }
+`;
+
+const Imgcontainer = styled.div`
+    @media(max-width: 800px){
+        display: none;
     }
 `;
 
@@ -54,18 +69,22 @@ const P = styled.p`
     font-weight: regular;
     color: white;
     font-size: 24px;
-    margin-right: 20px;
+    margin: 20px 20px 40px 0;
+    @media(max-width: 800px){
+        font-size: 20px;
+        margin: 0 20px 40px 20px;
+    }
 `;
 
 const TopSection = (props) => (
     <Wrapper>
-            <Overlay>
+            <Container>
                 <H1>A 21<sup>st</sup> Century Pharmaceutical Company</H1>
-                <Img src='capsule.png'/>
+                <Imgcontainer><Img src='capsule.png'/></Imgcontainer>
                 <P>
                     We aim to leverage technology and a lean operational structure to bring quality legacy products to your local market.
                 </P>
-            </Overlay>
+            </Container>
     </Wrapper>
 )
 

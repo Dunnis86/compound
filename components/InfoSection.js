@@ -7,6 +7,9 @@ const Container = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto; 
   justify-content: left;
+  @media(max-width: 800px){
+        padding: 20px;
+  }
 `;
 
 const InfoSection = ({ children }) => (

@@ -27,11 +27,6 @@ const GlobalStyle = createGlobalStyle`
     
   }
 
-  .container {
-    margin: 0 auto;
-    overflow: auto;
-  }
-
   a {
     text-decoration: none;
     color: #333;
@@ -46,18 +41,18 @@ const theme = {
 
 function MyApp({ Component, pageProps }) {
   return (
-  <div>
+  <>
   <GlobalStyle/>
   <ThemeProvider theme={theme}>
     <Head>
-      <title>Compound AS - A 21st Century Pharmaceutical Company</title>
+      <title>Compound AS</title>
       <link rel='icon' href='favico.ico'/>
     </Head>
     <NavBar/>
     <Component {...pageProps} />
     <Footer/>
   </ThemeProvider>
-  </div>
+  </>
   )
 }
 

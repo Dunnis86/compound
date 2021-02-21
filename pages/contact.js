@@ -10,13 +10,17 @@ const H1 = styled.h1`
   color: black;
   justify-content: left;
   margin-bottom: 40px;
+  @media(max-width: 765px){
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
 `;
 
 const Form = styled.form`
     position: relative;
     top: 60px;
     height: 350px;
-    width: 400px;
+    width: auto;
     padding: 0px;
     z-index: 10;
     justify-self: left;
@@ -50,31 +54,29 @@ const TextArea = styled.textarea`
   }
 `;
 
-export default function Contact () {
+export default function Contact (props) {
     return (
-        <div>
-            <InfoSection>
-                <H1>Contact</H1>
-                <p>Please use the form to reach out if you have any questions.</p>
-                <Form name="contact" method="POST" data-netlify="true">
-                    <Input type="hidden" name="form-name" value="contact" />
-                    <p>
-                    <Label for="name">Name</Label>
-                    <Input type="text" id="name" name="name" />
-                    </p>
-                    <p>
-                    <Label for="email">Email</Label>
-                    <Input type="text" id="email" name="email" />
-                    </p>
-                    <p>
-                    <Label for="message">Message</Label>
-                    <TextArea id="message" name="message"></TextArea>
-                    </p>
-                    <p>
-                    <Button type="submit">Send</Button>
-                    </p>
-                </Form>
-            </InfoSection>        
-        </div>
+        <InfoSection>
+            <H1>Contact</H1>
+            <p>Please use the form to reach out if you have any questions.</p>
+            <Form name="contact" method="POST" data-netlify="true">
+                <Input type="hidden" name="form-name" value="contact" />
+                <p>
+                <Label for="name">Name</Label>
+                <Input type="text" id="name" name="name" />
+                </p>
+                <p>
+                <Label for="email">Email</Label>
+                <Input type="text" id="email" name="email" />
+                </p>
+                <p>
+                <Label for="message">Message</Label>
+                <TextArea id="message" name="message"></TextArea>
+                </p>
+                <p>
+                <Button type="submit">Send</Button>
+                </p>
+            </Form>
+        </InfoSection>        
     )
 }
