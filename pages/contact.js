@@ -74,11 +74,10 @@ export default function SectionContact () {
     }
     const handleSubmit = async (e) => {
       e.preventDefault();
-      console.log(allValues)
       const options = {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contactForm', ...allValues })
+        body: encode({ 'form-name': 'contact', ...allValues })
       }
       fetch("/", options)
       .then(function (response) {
