@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const GlobalStyle = createGlobalStyle`
 
   :root {
-    --primary-color: #047aed;
+    --primary-color: #004E7C;
     --secondary-color: #1c3fa8;
     --dark-color: #002240;
     --light-color: #f4f4f4;
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     
@@ -46,7 +46,9 @@ function MyApp({ Component, pageProps }) {
   <ThemeProvider theme={theme}>
     <Head>
       <title>Compound AS</title>
-      <link rel='icon' href='favico.ico'/>
+      <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
     </Head>
     <NavBar/>
     <Component {...pageProps} />

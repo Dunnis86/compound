@@ -36,7 +36,6 @@ const NavListItem = styled.li`
     list-style: none;
     a {
         padding: 20px;
-        font-family: "Untitled Sans",Helvetica,Arial,sans-serif;
         color: white;        
     }
     a:hover {
@@ -46,7 +45,6 @@ const NavListItem = styled.li`
 `;
 
 const P = styled.p`
-    font-family: "Untitled Sans",Helvetica,Arial,sans-serif;
     font-size: 18px;
     color: white;
     margin-bottom: 20px;

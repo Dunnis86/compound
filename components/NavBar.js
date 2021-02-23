@@ -8,7 +8,7 @@ const Navbar = styled.nav`
     display: flex; 
     width: 100%;
     justify-content: space-between;
-    align-items: fixed;
+    align-items: center;
     ${props => {
         if (props.scrolled) return`
             transition: all 0.2s ease-in;
@@ -20,20 +20,32 @@ const Navbar = styled.nav`
     }}
 `;
 
-const Logo = styled.a`
-    padding: 1em;
-    a {
-        font-family: "Untitled Sans",Helvetica,Arial,sans-serif;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
+const Logo = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+const Column1 = styled.div`
+    padding: 0 1rem;    
+    img {
+        height: 30px;
+    }
+`;
+
+const Column2 = styled.div`
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    @media(max-width: 800px){
+        display: none;
     }
 `;
 
 const NavItem = styled.ul`
-    padding: 1em;
+    padding: 1rem;
     display: flex;
-    
+    align-items: center;
 `;
 
 const NavListItem = styled.li`
@@ -42,14 +54,13 @@ const NavListItem = styled.li`
 `;
 
 const A = styled.a`
-    padding: 10px;
-    font-family: "DIN",Helvetica,Arial,sans-serif;
+    padding: 1rem;
     color: #fff;
     text-decoration: none;        
     &:after {
         content: "";
         position: absolute;
-        top: 1em;
+        top: 1rem;
         height: 3px;
         width: 0%;
         left: 5%;
@@ -82,7 +93,7 @@ const NavBar = ({ href, props }) => {
 
     return(
         <Navbar scrolled={scrolled}>
-                <Logo><Link href="/"><a>Compound</a></Link></Logo>
+                <Logo><Column1><Link href="/"><a><img src='logo.png' alt='logo'/></a></Link></Column1><Link href="/"><a><Column2>Compound</Column2></a></Link></Logo>
                     <NavItem>
                         <NavListItem><Link href="/"><A>About</A></Link></NavListItem>
                         <NavListItem><Link href="/"><A>Investor</A></Link></NavListItem>

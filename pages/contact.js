@@ -3,8 +3,7 @@ import Button from '../components/Button'
 import InfoSection from '../components/InfoSection'
 
 const H1 = styled.h1`
-  font-family: "Tiempos Headline";
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 52px;
   letter-spacing: -0.03em;
   color: black;

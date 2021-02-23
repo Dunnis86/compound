@@ -9,7 +9,7 @@ const Wrapper = styled.section`
 const Container = styled.div`
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-gap: 1em;
+    grid-gap: 1rem;
     justify-content: left;  
     @media(max-width: 800px){
         grid-template-columns: 1fr;
@@ -26,14 +26,13 @@ const Div = styled.div`
     }
 `;
 
-const H1 = styled.h1`
-    font-family: "Tiempos Headline";   
-    font-weight: bold;
+const H1 = styled.h1`   
+    font-weight: normal;
     font-size: 52px;
     letter-spacing: -.03em;
     color: black;
     justify-content: left;
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.5rem 0 0.5rem 0;
     @media(max-width: 800px){
         font-size: 32px;
         text-align: center;
@@ -44,7 +43,7 @@ const H1 = styled.h1`
 
 const P = styled.p`
     font-size: 18;
-    margin: 0 1em 1em 0;
+    margin: 0 1rem 1rem 0;
     @media(max-width: 800px){
         margin: 40px;} 
 `;
