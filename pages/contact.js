@@ -92,7 +92,7 @@ export default function SectionContact () {
         <InfoSection>
             <H1>Contact</H1>
             <P>Please use the form to reach out if you have any questions.</P>
-            <Form data-netlify="true" onSubmit={handleSubmit}>
+            <Form name='contact' data-netlify="true" onSubmit={handleSubmit}>
                 <label htmlFor="contact-form-name">Name</label>
                 <Input type="text" name="name" value={allValues.name} onChange={handleInputChange}/>
                 <label htmlFor="contant-form-email">Email address</label>
