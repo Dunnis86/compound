@@ -6,12 +6,12 @@ const Wrapper = styled.section`
     background-color: rgb(0,0,0);
     border: 0;
     margin: 0;
-    padding-top: 54px;
-    padding-bottom: 36px;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
     width: 100%;
     @media(max-width: 800px){
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         text-align: center;    
     }
 `;
@@ -20,9 +20,9 @@ const Div = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: left;
-    padding: 20px 200px;
+    padding: 2rem 20rem;
     @media(max-width: 800px){
-        padding: 20px;
+        padding: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -35,7 +35,7 @@ const NavItem = styled.ul`
 const NavListItem = styled.li`
     list-style: none;
     a {
-        padding: 20px;
+        padding: 2rem;
         color: white;        
     }
     a:hover {
@@ -45,7 +45,7 @@ const NavListItem = styled.li`
 `;
 
 const P = styled.p`
-    font-size: 18px;
+    font-size: 1.2rem;
     color: white;
     margin-bottom: 20px;
 `;
