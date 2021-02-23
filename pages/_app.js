@@ -46,6 +46,8 @@ function MyApp({ Component, pageProps }) {
   <ThemeProvider theme={theme}>
     <Head>
       <title>Compound AS</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta http-equiv="content-language" content="en-us"/>
       <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>

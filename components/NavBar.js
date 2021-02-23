@@ -96,7 +96,7 @@ const NavBar = ({ href, props }) => {
                 <Logo><Column1><Link href="/"><a><img src='logo.png' alt='logo'/></a></Link></Column1><Link href="/"><a><Column2>Compound</Column2></a></Link></Logo>
                     <NavItem>
                         <NavListItem><Link href="/"><A>About</A></Link></NavListItem>
-                        <NavListItem><Link href="/"><A>Investor</A></Link></NavListItem>
+                        <NavListItem><Link href="/contact-next"><A>Investor</A></Link></NavListItem>
                         <NavListItem><Link href="/contact"><A>Contact</A></Link></NavListItem>
                     </NavItem>
         </Navbar>

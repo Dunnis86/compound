@@ -91,7 +91,7 @@ const TopSection = (props) => (
     <Wrapper>
             <Container>
                 <H1>A 21<sup>st</sup> Century Pharmaceutical Company</H1>
-                <Imgcontainer><Img src='capsule.png'/></Imgcontainer>
+                <Imgcontainer><Img src='capsule.png' alt='rotating picture of capsule'/></Imgcontainer>
                 <P>
                     Compound aims to leverage technology and a lean operational structure to bring quality legacy products to your local market.
                 </P>

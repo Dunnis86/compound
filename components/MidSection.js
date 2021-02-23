@@ -26,7 +26,7 @@ const Div = styled.div`
     }
 `;
 
-const H1 = styled.h1`   
+const H1 = styled.h2`   
     font-weight: normal;
     font-size: 52px;
     letter-spacing: -.03em;
@@ -74,7 +74,7 @@ const MidSection = (props) => (
     <Wrapper>
             <Container>
                 <Img> 
-                    <img src={'archive.jpg'}/>
+                    <img src={'archive.jpg'} alt='picture of an archive'/>
                 </Img>
                 <Div>
                     <H1>Looking Forward</H1>
