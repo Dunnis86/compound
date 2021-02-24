@@ -39,9 +39,7 @@ const theme = {
   },
 }
 
-const description = "Compound aims to leverage technology and a lean operational structure to bring quality legacy products to your local market."
-
-function MyApp({ Component, pageProps, description, ...props }) {
+function MyApp({ Component, pageProps, ...props }) {
   return (
   <>
   <GlobalStyle/>
@@ -54,7 +52,7 @@ function MyApp({ Component, pageProps, description, ...props }) {
       <meta property="og:image" content="opengraph_pic.png" key="ogimage" />
       <meta property="og:site_name" content="Compound AS" key="ogsitename" />
       <meta property="og:title" content="Home" key="ogtitle" />
-      <meta property="og:description" content={description} key="ogdesc" />
+      <meta property="og:description" content="A 21st Century Pharmaceutical Company" key="ogdesc" />
       <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
