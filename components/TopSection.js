@@ -60,9 +60,6 @@ const Imgcontainer = styled.div`
     align-self: center;
     vertical-align: center;
     @media(max-width: 1200px) {
-        justify-self: center;
-    }
-    @media(max-width: 800px){
         display: none;
     }
 `;
